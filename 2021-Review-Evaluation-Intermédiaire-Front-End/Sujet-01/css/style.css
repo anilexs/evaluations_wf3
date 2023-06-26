@@ -1,0 +1,247 @@
+/* https://fonts.google.com/ */
+
+@font-face {
+  font-family: "LiberationSans-Bold-webfont";
+  src: url("../fonts/LiberationSans-Bold-webfont.ttf");
+}
+
+@font-face {
+  font-family: "LiberationSans-Regular-webfont";
+  src: url("../fonts/LiberationSans-Regular-webfont.ttf");
+}
+
+/*************** GLOBAL ***************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   vertical-align: baseline;
+}
+*{
+    box-sizing: border-box;/*pour garder la meme taille*/
+}
+img{
+    width:100%;
+}
+header{
+    background-image: url("../images/background.jpg");
+    background-size: 100%;
+  
+}
+.orange{
+    color: orange;
+}
+a{
+    text-decoration: none;
+}
+
+/*************** END GLOBAL ***************/
+
+/*************** HEADER ***************/
+header{
+    padding: 30px 0px;
+    font-family: "LiberationSans-Bold-webfont";
+}
+.hdr{
+    width: 56%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 350px;
+    margin-bottom: 20px;
+}
+.hdrp{
+    margin-top: 10px;
+    font-size: 23.8px;
+}
+.hdrdiv2{
+    direction: rtl;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+header a{
+    color: black;
+}
+nav{
+    display: flex;
+    height: 80%;
+    align-items: flex-end;
+}
+/*************** END HEADER ***************/
+
+/*************** NAV ***************/
+
+/*************** END NAV ***************
+
+/*************** MAIN ***************/
+img{
+    display: block;
+}
+main{
+    background-color: #1c1c1c;
+}
+.container{
+    padding-top: 20px;
+    margin-top: 20px;
+    width: 56%;
+    margin: auto;
+    position: relative;
+}
+.positionMain{
+    position: absolute;
+    width: 52%;
+    left: 23%;
+    bottom: -30px;
+}
+.ulMain{
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.pts{
+    background-color: rgb(191, 191, 191);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+.positionMain a{
+    color: black;
+    text-decoration: none;
+}
+.mainwithe{
+    background-color: #f3f3f3;
+}
+.box{
+    display: flex;
+    width: 78%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+.box1{
+    width: 40%;
+    margin-bottom: 80px;
+}
+.boxRelative{
+    position: relative;
+}
+.box1p{
+    position: absolute;
+    /* width: 10%; */
+    left: 15%;
+    bottom: 15px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: "LiberationSans-Bold-webfont";
+}
+.reduction{
+    position: absolute;
+    display: inline-block;
+    font-family: "LiberationSans-Bold-webfont";
+    border-radius: 10%;
+    background-color: #1c1c1c;
+    padding: 5px 20px 5px 15px;
+    font-size: 30px;
+    top: 15px;
+    right: -25px
+}
+.txtbare{
+    text-decoration: line-through;
+}
+.vent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+.divA{
+    font-family: "LiberationSans-Bold-webfont";
+    color: white;
+    background-color: #1c1c1c;
+    padding: 7px 30px;
+}
+.divP{
+    font-family: "LiberationSans-Bold-webfont";
+    font-size: 30px;
+}
+
+/*************** FOOTER ***************/
+
+footer{
+    background-color: #373737;
+}
+.secftr{
+    display: flex;
+    justify-content: space-evenly;
+    width: 56%;
+    margin: auto;
+    padding-top: 70px;
+    color: white;
+    border-bottom: 3px solid gray;
+}
+.ftrImg{    
+    width: 100px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.ftrDiv{
+    width: 22%;
+    text-align: center;
+    font-size: 11px;
+    font-family: "LiberationSans-Bold-webfont";
+    padding-bottom: 50px;
+}
+.ftrCopy{
+    text-align: center;
+    color: white;
+    font-family: "LiberationSans-Bold-webfont";
+}
+.ftrResaut{
+    display: flex;
+    justify-content: space-around;
+    width: 21%;
+    margin: 40px auto;
+}
+.ftrImgSec2{
+    width: 30px;
+    height: 30px;
+}
+/*************** END FOOTER ***************/
+
+/*************** MEDIAQUERY ***************/
+
+@media (max-width: 576px) {
+    .hdr{
+        width: 90%;
+    display: block;
+}
+    .hdrdiv2{
+    direction: ltr;
+}
+}
+
+/*************** END MEDIAQUERY ***************/
