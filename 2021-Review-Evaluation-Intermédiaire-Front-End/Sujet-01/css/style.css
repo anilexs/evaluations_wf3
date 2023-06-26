@@ -47,7 +47,9 @@ header{
 a{
     text-decoration: none;
 }
-
+ul{
+    list-style-type: none;
+}
 /*************** END GLOBAL ***************/
 
 /*************** HEADER ***************/
@@ -55,11 +57,27 @@ header{
     padding: 30px 0px;
     font-family: "LiberationSans-Bold-webfont";
 }
-.hdr{
+.hdrsec{
     width: 56%;
     margin: auto;
+}
+nav{
+    position: absolute;
+    bottom: 21px;
+    right: 0;
+}
+
+.hdr{
     display: flex;
     justify-content: space-between;
+    position: relative;
+}
+.hdr2{  
+    width: 100%;
+}
+.hdrdiv2{
+    height: 150px;
+    direction: rtl; 
 }
 .logo{
     width: 350px;
@@ -69,10 +87,7 @@ header{
     margin-top: 10px;
     font-size: 23.8px;
 }
-.hdrdiv2{
-    direction: rtl;
-}
-ul{
+.ullihdr{
     list-style-type: none;
     display: flex;
     width: 400px;
@@ -80,11 +95,6 @@ ul{
 }
 header a{
     color: black;
-}
-nav{
-    display: flex;
-    height: 80%;
-    align-items: flex-end;
 }
 /*************** END HEADER ***************/
 
@@ -98,6 +108,12 @@ img{
 }
 main{
     background-color: #1c1c1c;
+}
+.mainhdr{
+    background-image: url(../images/header-page-catalogue.png);
+    height: 334px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .container{
     padding-top: 20px;
@@ -141,6 +157,7 @@ main{
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 80px;
+    padding-top: 40px;
 }
 .box1{
     width: 40%;
@@ -162,12 +179,23 @@ main{
     position: absolute;
     display: inline-block;
     font-family: "LiberationSans-Bold-webfont";
-    border-radius: 10%;
+    border-radius: 15px;
+    background-color: #1c1c1c;
+    padding: 5px 15px 5px 15px;
+    font-size: 30px;
+    top: 15px;
+    right: -25px
+}
+.reduction2{
+    position: absolute;
+    display: inline-block;
+    font-family: "LiberationSans-Bold-webfont";
+    border-radius: 15px;
     background-color: #1c1c1c;
     padding: 5px 20px 5px 15px;
     font-size: 30px;
     top: 15px;
-    right: -25px
+    right: -70px
 }
 .txtbare{
     text-decoration: line-through;
@@ -219,6 +247,7 @@ footer{
     text-align: center;
     color: white;
     font-family: "LiberationSans-Bold-webfont";
+    padding-bottom: 50px;
 }
 .ftrResaut{
     display: flex;
@@ -233,14 +262,128 @@ footer{
 /*************** END FOOTER ***************/
 
 /*************** MEDIAQUERY ***************/
-
-@media (max-width: 576px) {
+@media (max-width: 1300px){
+  .Julien{
+    text-align: center;
+  }
     .hdr{
-        width: 90%;
+    display: block;
+  }
+  nav{
+    right: 100px;
+  }
+  .ullihdr{
+    /* margin-top: 30px; */
+    width: 180%;
+}
+.logo{
+    margin: auto;
+}
+.hdrp{
+    text-align: center;
+}
+.positionMain{
+    width: 90%;
+    left: 5%;
+    bottom: -30px;
+}
+.container{
+    width: 80%;
+    padding-top: 35px;
+}
+.reduction{
+    border-radius: 8px;
+    font-size: 20px;
+    top: 7px;
+    right: -15px
+}
+.reduction2{
+    border-radius: 8px;
+    font-size: 20px;
+    top: 7px;
+    right: -40px
+}
+.secftr{
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ftrDiv{
+    width: 45%;
+}
+.ftrResaut{
+    width: 30%;
+    /* margin: 40px auto; */
+}
+}
+@media (max-width: 576px) {
+    .mainhdr{
+    background-size: cover;
+    background-position: center;
+}
+    .logo{
+        margin: auto;
+        width: 60%;
+    }
+    .hdr{
     display: block;
 }
+    .hdrp{
+        margin-bottom: 30px;
+    }
     .hdrdiv2{
     direction: ltr;
+}
+nav{
+    right: 130px;
+}
+.container{
+    width: 90%;
+    padding-top: 35px;
+}
+.hdrdiv2{
+    margin-left: -80px;
+    display: block;
+}
+.ullihdr{
+    flex-direction: row-reverse;
+    margin-top: 30px;
+    width: 180%;
+}
+.box1{
+    margin: auto;
+    width: 90%;
+    margin-top: 70px;
+}
+.reduction{
+    border-radius: 8px;
+    font-size: 20px;
+    top: 7px;
+    right: -15px
+}
+.reduction2{
+    border-radius: 8px;
+    font-size: 20px;
+    top: 7px;
+    right: -40px
+}
+.positionMain{
+    width: 90%;
+    left: 5%;
+    bottom: -30px;
+}
+
+.secftr{
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ftrDiv{
+    width: 45%;
+}
+.ftrResaut{
+    width: 70%;
+    /* margin: 40px auto; */
 }
 }
 
