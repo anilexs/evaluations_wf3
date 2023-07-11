@@ -16,18 +16,33 @@
     <header>
         <div class="wellcom">
             <h2>Bienvenue à bord</h2>
-            <p>Location de voiture 24h/24 et 7j/7</p>
+            <p class="pHdr">Location de voiture 24h/24 et 7j/7</p>
+        </div>
+        <div class="toggle-container">
+          <button class="toggle-button"><i class="fa-solid fa-bars"></i></button>
+          <div class="toggle-content">
+            <ul>
+                <li><a href="">Louer un utilitaire</a></li>
+                <li><a href="">Louer un utilitaire</a></li>
+                <li><a href="">Réserver un chauffeur</a></li>
+                <li><a href="">Déecouvez nos agences</a></li>
+                <li><a href="">Mon Compte</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+          </div>
         </div>
         <nav>
-            <select id="départ">
-                <option label="Option 1" value="defaux">Adresse de départ</option>
-                <option label="Option 2" value="adres1"></option>
-                <option label="Option 3" value="adres2"></option>
-                <option label="Option 4" value="adres3"></option>
-            </select>
-            <input type="date">
-            <input type="date">
-            <input type="submit" value="Valider ma recherch" id="submit">
+            <form action="resevation">
+                <select id="départ" class="selec">
+                    <option label="Option 1" value="defaux">Adresse de départ</option>
+                    <option label="Option 2" value="adres1"></option>
+                    <option label="Option 3" value="adres2"></option>
+                    <option label="Option 4" value="adres3"></option>
+                </select> <br class="br">
+                <input type="date" class="inpute" id="debu"> <br class="br">
+                <input type="date" class="inpute" id="fin"> <br class="br">
+                <input type="submit" value="Valider ma recherch" id="submit">
+            </form>
         </nav>
         <div id="carouselHdr" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
@@ -76,7 +91,7 @@
                 </div>
                 <div class="txt">
                     <div>
-                        <h3 class="name">Peugeot 208</h3>
+                        <h3 class="name">Ford Focus</h3>
                         <p class="id">Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5/km supplémentaire),</p>
                         <p class="prix">999€ - Agence de Paris</p>
                         <button id="ReservationForcus">Réeserver et Payer</button>
@@ -92,7 +107,7 @@
                 </div>
                 <div class="txt">
                     <div>
-                        <h3 class="name">Peugeot 208</h3>
+                        <h3 class="name">Audi A1</h3>
                         <p class="id">Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5/km supplémentaire),</p>
                         <p class="prix">999€ - Agence de Paris</p>
                         <button id="ReservationA1">Réeserver et Payer</button>
@@ -108,7 +123,7 @@
                 </div>
                 <div class="txt">
                     <div>
-                        <h3 class="name">Peugeot 208</h3>
+                        <h3 class="name">Opel Mokka</h3>
                         <p class="id">Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5/km supplémentaire),</p>
                         <p class="prix">999€ - Agence de Paris</p>
                         <button id="ReservationMokka">Réeserver et Payer</button>
@@ -128,7 +143,8 @@
                 <p>Notre Agence de <span>Paris</span> <br>
                 300boulevard de vaugirard, 75015, Paris <br>
                 Ouvert 7j/7 de 09h à 13h et de 14h à 20h <br>
-                01 49 78 21 33
+                01 49 78 21 33 <br>
+                contact@vtc.com
                 </p>
             </div>
         </div>

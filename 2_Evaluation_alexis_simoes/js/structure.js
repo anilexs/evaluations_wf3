@@ -5,9 +5,15 @@ const carousel = new bootstrap.Carousel(myCarouselElement, {
   touch: false
 })
 
+const button = document.querySelector('.toggle-button');
+  const content = document.querySelector('.toggle-content');
+
+  button.addEventListener('click', function() {
+    content.style.display = (content.style.display === 'none') ? 'block' : 'none';
+  });
+
 function carouselCar (next, previous, car, tab){
     var i = 0;
-    $(document).ready(() =>{
         $(next).click(() =>{
             i++;
             if(i == tab.length){
@@ -28,7 +34,6 @@ function carouselCar (next, previous, car, tab){
                 
             })
         })
-    })
 }
 
 

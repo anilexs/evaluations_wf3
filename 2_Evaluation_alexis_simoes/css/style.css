@@ -47,37 +47,74 @@ body{
     background-color: gray;
   
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style-type: none;
+    background-color: white;
+}
+li{
+    padding: 7px 0px;
+}
 
+.br{
+    display: none;
+}
 /*************** END GLOBAL ***************/
 
 /*************** HEADER ***************/
 header{
     position: relative;
 }
+.toggle-content {
+    position: absolute;
+    display: none;
+    transition: height 0.5s ease;
+    z-index: 5;
+    top: 45px;
+    width: 100%;
+}
+.toggle-button{
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 3;
+    background-color: transparent;
+}
+
 .wellcom{
     display: inline-block;
     text-align: center;
     position: absolute;
     color: white;
     z-index: 3;
-    top: 45px;
-    left: 750px;
+    top: 10%;
+    left: 40%;
+    width: 400px;
 }
-nav{
+form{
     display: flex;
     justify-content: space-between;
-    width: 1128px;
-    height: 40px;
+    width: 59.1%;
+    min-height: 40px;
     background-color: rgba(132, 132, 132, 0.8);
     position: absolute;
     z-index: 3;
-    bottom: 90px;
-    left: 400px;
+    left: 20.5%;
+    bottom: 13%;
 }
 .wellcom h2{
     font-size: 50px;
 }
 #submit{
+    margin: 0;
+    border-radius: 0;
+    height: 100%;
     width: 25%;
     background-color: rgba(0, 255, 13, 0.4);
     color: white;
@@ -90,8 +127,19 @@ select {
 }
 input{
     width: 18%;
+    margin-top: 2px;
+    align-items: center;
     border-radius: 5px;
     border: none;
+}
+.inpute{
+    height: 80%;
+    margin-top: 5px;
+}
+.selec{
+    height: 80%;
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
 /*************** END HEADER ***************/
@@ -130,7 +178,8 @@ input{
 .txt{
     display: flex;
     align-items: center;
-    margin-left: 100px;
+    /* margin-left: 140px; */
+    margin-left: 12%;
 }
 .name{
     margin-bottom: 7px;
@@ -165,7 +214,7 @@ input{
     background-image: url(../img/vehicule4.png);
     background-size: cover;
 }
-#Reservation208{
+#Reservation208,#ReservationForcus,#ReservationA1,#ReservationMokka{
     color: white;
     border-radius: 5px;
     border: 1px solid green;
@@ -175,46 +224,138 @@ input{
 
 /*************** END MAIN ***************/
 
-/*************** ASIDE LEFT ***************/
-
-/*************** END ASIDE LEFT***************/
-
-/*************** SECTION 1 ***************/
-
-/*************** END SECTION 1 ***************/
-
-/*************** SECTION 2 ***************/
-
-/*************** END SECTION 2 ***************/
-
-/*************** SECTION 3 ***************/
-
-/*************** END SECTION 3 ***************/
-
-/*************** ASIDE RIGHT ***************/
-
-/*************** END ASIDE RIGHT ***************/
-
 /*************** FOOTER ***************/
 .ftrDiv{
     display: flex;
     justify-content: center;
-    margin-right: 175px;
+    /* margin-right: 1%; */
 }
 .ftrImg{
-    width: 200px;
-    margin-right: 50px;
+    width: 160px;
+    margin-right: 4%;
 }
 /*************** END FOOTER ***************/
 
 /*************** MEDIAQUERY ***************/
 
-@media (max-width: 1400px) {
-
+/* @media (max-width: 767px) { */
+@media (max-width: 920px) {
+    nav{
+        width: 80%;
+        display: block;
+        left: 10%;
+        bottom: 50px;
+}
+    form{
+        display: block;
+    }
+    #submit{
+    width: 100%;
+    background-color: rgba(0, 190, 10, 0.8);    
+}
+    input{
+    width: 33%;
+    margin-top: 2px;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+}
+    .inpute{
+    height: 80%;
+    margin-top: 5px;
+}
+    .selec{
+    width: 30%;
+    height: 80%;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.wellcom{
+    top: 10%;
+    left: 23%;
+    width: 400px;
+}
+.contenaire{
+    width: 90%;
 }
 
-@media (max-width: 960px) {
-
+.mainHdr{
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 30px;
 }
+.mainHdrH2{
+    margin-left: 50px;
+}
+#mainSelec{
+    width: 120px;
+    margin-right: 125px;
+}
+.txt{
+    margin-left: 240px;
+}
+.id,.name,.prix{
+    display: none;
+}
+.wellcom h2{
+    font-size: 40px;
+}
+.pHdr{
+    font-size: 10px;
+}
+}
+
+@media (max-width: 576px) {
+    header img{
+        height: 300px;
+    }
+    .contenaire{
+    width: 98%;
+}
+    .txt{
+    margin-left: 0px;
+}
+
+    form{
+        background-color: rgba(132, 132, 132, 0.8);
+        bottom: 150px;
+        left: 15px;
+        width: 95%;
+        display: block;
+    }
+    .br{
+        display: block;
+    }
+    input{     
+        width: 98%;
+        margin-left: 3px;
+}
+    .inpute{
+        width: 98%;
+        margin-left: 5px;
+}
+    .selec{
+    width: 98%;
+}
+.mainHdr{
+    width: 90%;
+    margin: 10px 0px;
+}
+.mainHdrH2{
+    margin-left: 0px;
+    margin-left: 30px;
+}
+#mainSelec{
+    width: 120px;
+    margin-right: -40px;
+}
+#Reservation208,#ReservationForcus,#ReservationA1,#ReservationMokka{
+    padding: 5px 5px;
+    width: 145px;
+    margin-left: 20px;
+}
+}
+
+
 
 /*************** END MEDIAQUERY ***************/
