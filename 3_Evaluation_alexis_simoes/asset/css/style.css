@@ -1,0 +1,34 @@
+body{
+    background-color: rgb(135, 135, 135);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style-type: none;
+}
+.contenaire{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.card{
+    width: 32%;
+    min-width: 300px;
+    margin: 20px 0px;
+}
+.title{
+    text-transform: uppercase;
+}
+p{
+    font-size: 30px;
+}
+.reserv{
+    background-color: rgb(70, 70, 70);
+}
+.libre{
+    background-color: white;
+}
