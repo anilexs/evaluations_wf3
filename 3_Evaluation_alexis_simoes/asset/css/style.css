@@ -1,5 +1,27 @@
+html, body, div, h1, 
+ul, li, nav {
+margin: 0;
+padding: 0;
+border: 0;
+vertical-align: baseline;
+}
+*{
+    box-sizing: border-box;
+
+}
 body{
     background-color: rgb(135, 135, 135);
+}
+nav{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: powderblue;
+    margin: 0px 0px 30px 0px;
+    font-size: 20px;
+}
+.add_annonce{
+    text-align: center;
 }
 a{
     text-decoration: none;
@@ -16,9 +38,12 @@ ul{
     flex-wrap: wrap;
 }
 .card{
+    height: 450px;
     width: 32%;
     min-width: 300px;
     margin: 20px 0px;
+    background-color: white;
+    text-align: center;
 }
 .title{
     text-transform: uppercase;
@@ -31,4 +56,11 @@ p{
 }
 .libre{
     background-color: white;
+}
+.annonceAdd{
+    font-size: 30px;
+}
+.a{
+    background-color: greenyellow;
+    padding: 10px;
 }

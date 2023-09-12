@@ -20,11 +20,11 @@ $reserv = null;
                 <p><?= $annonce['postal_code'] ?></p>
                 <p><?= $annonce['city'] ?></p>
                 <p><?= $annonce['type'] ?></p>
-                <p><?= $annonce['price'] ?></p>
+                <p><?= $annonce['price'] ?>€</p>
                 <?php if(isset($annonce['reservation_message'])){ ?>
                     <input type="text" value="réservé" disabled>
                 <?php }else{ ?>
-                        <a href="voir_annonce.php?id=<?= $annonce['id']; ?>">Consulter une annonce</a>
+                        <a class="a" href="voir_annonce.php?id=<?= $annonce['id']; ?>">Consulter une annonce</a>
                 <?php } ?>
             </div>
             <?php } ?>

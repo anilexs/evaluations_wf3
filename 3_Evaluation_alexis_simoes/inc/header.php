@@ -8,7 +8,12 @@
     <title>Document</title>
 </head>
 <body>
-    <ul>
-        <li><a href="http://localhost/evaluations_wf3/3_Evaluation_alexis_simoes/add_annonce.php">Ajouter une annonce</a></li>
-        <li><a href="http://localhost/evaluations_wf3/3_Evaluation_alexis_simoes/all_annonces.php">Consulter toutes les annonce</a></li>
-    </ul>
+    <nav>
+        <div>
+            <a href="http://localhost/evaluations_wf3/3_Evaluation_alexis_simoes/accueil.php"><h1>Le Bon Appart</h1></a>
+        </div>
+        <ul>
+            <li><a href="http://localhost/evaluations_wf3/3_Evaluation_alexis_simoes/add_annonce.php">Ajouter une annonce</a></li>
+            <li><a href="http://localhost/evaluations_wf3/3_Evaluation_alexis_simoes/all_annonces.php">Consulter toutes les annonce</a></li>
+        </ul>
+    </nav>

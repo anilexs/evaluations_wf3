@@ -13,7 +13,7 @@ $listAnnonce = listAnnonce(1);
                 <p><?= $annonce['postal_code'] ?></p>
                 <p><?= $annonce['city'] ?></p>
                 <p><?= $annonce['type'] ?></p>
-                <p><?= $annonce['price'] ?></p>
+                <p><?= $annonce['price'] ?>€</p>
             </div>
         <?php
     }
